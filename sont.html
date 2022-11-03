@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // hiển thị 20 nst đầu tiên
+        // tư duy: kiểm tra a chia hết cho bất kỳ số nào từ 2 đến a-1 => a ko là sô nt
+
+        let snt = true;
+        for (let count = 0; count <= 20; count++) {
+            for (let i = 2; true; i++) {
+                if (snt % i == 0) {
+                    snt = false;
+                }
+            }
+            if (snt) {
+                document.write(snt + '<br>');
+            }
+        }
+    </script>
+</body>
+
+</html>

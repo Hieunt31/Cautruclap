@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>Nhập vào số</p>
+<input type="text" id="inp"><br>
+<button id="submit" onclick="doit()">OK</button>
+<button type="reset" id="reset" onclick="reset()">Cancel</button>
+
+
+<body>
+    <script>
+        function doit() {
+            let inp = document.getElementById('inp').value;
+            while (inp > 0) {
+                let donVi = inp % 10;
+                document.write(donVi);
+                let remind = donVi
+                inp = parseInt(inp / 10);
+            }
+        }
+    </script>
+</body>
+
+</html>

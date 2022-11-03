@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // CÁCH 1
+        let a = 1;
+        let b = 1;
+        while (true) { // => true: không cần xác định số lượng nhất định
+            if (a % 5 == 0) {
+                document.write(a + '<br>'); // => break như này để in ra 1 kết quả đầu thôi {}
+                break; //=> cách dừng vòng lặp ngay lập tức, dùng trong while/for
+            }
+            let c = a + b;
+            a = b;
+            b = c;
+        }
+
+        // CÁCH 1
+        let a = 1;
+        let b = 1;
+        let chiahetcho5=false
+        while (!chiahetcho5) { // => chiahetcho5 = false => !chiahetcho5 = true => đặt true trong này cũng ko ảnh hưởng gì nhiều
+            if (a % 5 == 0) chiahetcho5 = true;
+            let c = a + b;
+            a = b;
+            b = c;
+        }  document.write(a + '<br>');
+    </script>
+</body>
+
+</html>
